@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_marginTop="30dp"
+    tools:context=".SignUpActivity"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#F44336" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="14dp"
+        android:background="@drawable/bglogin"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="145dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+
+
+            android:src="@drawable/splashylogo" />
+
+        <TextView
+            android:layout_marginTop="-20dp"
+            android:id="@+id/Logotext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Welcome to FoodSpot"
+            android:textColor="#F44336"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+
+            >
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+
+
+                android:textStyle="italic"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+
+
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textStyle="italic"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bgbuton"
+                android:text="LOGIN" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="DON'T have an account ? "
+                android:textColor="#F45044"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tvSignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="SIGNUP"
+                android:textColor="#FFC107"
+                android:textSize="23sp"
+                android:textStyle="italic" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/a/app/src/main/res/drawable-v24/bottom_navigation_selector.xml" value="0.18055555555555555" />
+        <entry key="..\:/a/app/src/main/res/drawable-v24/ic_baseline_shopping_cart_24.xml" value="0.26481481481481484" />
+        <entry key="..\:/a/app/src/main/res/drawable/bgbuton.xml" value="0.2740740740740741" />
+        <entry key="..\:/a/app/src/main/res/drawable/bglogin.xml" value="0.2692307692307692" />
+        <entry key="..\:/a/app/src/main/res/drawable/ic_baseline_login_24.xml" value="0.26481481481481484" />
+        <entry key="..\:/a/app/src/main/res/layout/activity_cart.xml" value="0.27291666666666664" />
+        <entry key="..\:/a/app/src/main/res/layout/activity_check_out.xml" value="0.10462962962962963" />
+        <entry key="..\:/a/app/src/main/res/layout/activity_extra.xml" value="0.22" />
+        <entry key="..\:/a/app/src/main/res/layout/activity_extra_detail.xml" value="0.25729166666666664" />
+        <entry key="..\:/a/app/src/main/res/layout/activity_favorite.xml" value="0.1" />
+        <entry key="..\:/a/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/a/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/a/app/src/main/res/layout/activity_new_arrival_detail.xml" value="0.25729166666666664" />
+        <entry key="..\:/a/app/src/main/res/layout/activity_product_detail.xml" value="0.25729166666666664" />
+        <entry key="..\:/a/app/src/main/res/layout/activity_products.xml" value="0.1" />
+        <entry key="..\:/a/app/src/main/res/layout/activity_sign_up.xml" value="0.18" />
+        <entry key="..\:/a/app/src/main/res/layout/activity_splashy_screen.xml" value="0.25" />
+        <entry key="..\:/a/app/src/main/res/layout/error_layout.xml" value="0.2111111111111111" />
+        <entry key="..\:/a/app/src/main/res/layout/item_layout_cart.xml" value="0.25729166666666664" />
+        <entry key="..\:/a/app/src/main/res/layout/item_layout_category.xml" value="0.25729166666666664" />
+        <entry key="..\:/a/app/src/main/res/layout/item_layout_deals.xml" value="0.25729166666666664" />
+        <entry key="..\:/a/app/src/main/res/menu/main.xml" value="0.17391304347826086" />
+        <entry key="..\:/a/app/src/main/res/menu/nav_view.xml" value="0.27291666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="EntryPointsManager">
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="android.annotation.SuppressLint" />
+    </list>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

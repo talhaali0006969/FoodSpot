@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ExtraActivity">
+
+
+
+
+
+    <com.denzcoskun.imageslider.ImageSlider
+
+        android:id="@+id/image_slider"
+        android:layout_width="wrap_content"
+        android:layout_height="210dp"
+        android:layout_marginEnd="0dp"
+        app:auto_cycle="true"
+        app:corner_radius="20"
+        app:delay="0"
+        app:period="1000000"
+        app:selected_dot="@drawable/default_selected_dot" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="#F44336"
+        />
+
+    <TextView
+
+
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_slider"
+        android:layout_marginLeft="5dp"
+
+        android:layout_marginTop="10dp"
+        android:text="DEALS"
+        android:textColor="#F44336"
+        android:textSize="21sp"
+        tools:ignore="NotSibling" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_below="@id/tvTitle"
+        android:layout_above="@id/nav_View"
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingClass">
+        <ScrollView
+            android:layout_width="fill_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitle"
+            android:adjustViewBounds="true">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@id/tvTitle"
+                android:id="@+id/rvDeals"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/nav_View"
+                android:layout_marginTop="5dp" />
+        </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+
+        android:id="@+id/nav_View"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@drawable/bottom_navigation_selector"
+
+        app:labelVisibilityMode="unlabeled"
+
+        app:menu="@menu/nav_view" />
+
+
+
+    <include
+        android:id="@+id/errorLayout"
+        layout="@layout/error_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    </RelativeLayout>
